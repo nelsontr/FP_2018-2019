@@ -1,0 +1,215 @@
+#	##################################
+#	sum(todos) = 1400
+#	##################################
+#   eh_tabuleiro 100 (20)
+eh_tabuleiro	t=((-1,-1,-1),(0,0,-1),(1,-1))\neh_tabuleiro(t)	5	True
+eh_tabuleiro	t=(('-1','-1','-1'),('0','0','-1'),('1','-1'))\neh_tabuleiro(t)	 5	False
+eh_tabuleiro	t=(('2','-1','6'),('0','2','-1'),('1','-1'))\neh_tabuleiro(t)	5	False
+eh_tabuleiro	t=((),(),())\neh_tabuleiro(t)	5	False
+eh_tabuleiro	t=('()','()','()')\neh_tabuleiro(t)	5	False
+eh_tabuleiro	t=([],[],[])\neh_tabuleiro(t)	5	False
+eh_tabuleiro	t=((2,-1,6),(0,2,-1),(1,-1))\neh_tabuleiro(t)	5	False
+eh_tabuleiro	t=((-1,-1,-1),(0,0,-1),(1,-1),())\neh_tabuleiro(t)	5	False
+eh_tabuleiro	t=((-1,-1,-1),(1,-1))\neh_tabuleiro(t)		5	False
+eh_tabuleiro	t=((-1,-1,-1,-1),(0,0,-1),(1,-1))\neh_tabuleiro(t)		5	False
+eh_tabuleiro	t=((-1,-1,-1),(0,0,-1,-1),(1,-1))\neh_tabuleiro(t)		5	False
+eh_tabuleiro	t=((-1,-1,-1),(0,0,-1),(1,-1,-1))\neh_tabuleiro(t)		5	False
+eh_tabuleiro	t=[(-1,-1,-1),(0,0,-1),(1,-1)]\neh_tabuleiro(t)	5	False
+eh_tabuleiro	t=([-1,-1,-1],[0,0,-1],[1,-1])\neh_tabuleiro(t)	5	False
+eh_tabuleiro	t=[[-1,-1,-1],[0,0,-1],[1,-1]]\neh_tabuleiro(t)	5	False
+eh_tabuleiro	t='((-1,-1,-1),(0,0,-1),(1,-1))'\neh_tabuleiro(t)	5	False
+eh_tabuleiro	t=()\neh_tabuleiro(t)	5	False
+eh_tabuleiro	t=[]\neh_tabuleiro(t)	5	False
+eh_tabuleiro	t=((1,-1),(0,0,-1),(-1,-1,-1))\neh_tabuleiro(t)	5	False
+eh_tabuleiro	t=[(-1,-1,-1),(0,0,-1)]\neh_tabuleiro(t)		5	False
+#	tabuleiro_str 300 (31)
+tabuleiro_str	tabuleiro_str(((-1, -1, -1), (0, -1, 0), (-1, 0)))=='+-------+\\n|...x...|\\n|..x.0..|\\n|.x.x.0.|\\n|..0.x..|\\n+-------+'	10	True
+tabuleiro_str	tabuleiro_str(((-1, -1, -1), (0, -1, 1), (-1, 1)))=='+-------+\\n|...x...|\\n|..x.1..|\\n|.x.x.1.|\\n|..0.x..|\\n+-------+'	10	True
+tabuleiro_str	tabuleiro_str(((-1, -1, -1), (0, 0, -1), (0, -1)))=='+-------+\\n|...x...|\\n|..x.x..|\\n|.x.0.x.|\\n|..0.0..|\\n+-------+'	10	True
+tabuleiro_str	tabuleiro_str(((-1, -1, -1), (0, 1, -1), (1, -1)))=='+-------+\\n|...x...|\\n|..x.x..|\\n|.x.1.x.|\\n|..0.1..|\\n+-------+'	10	True
+tabuleiro_str	tabuleiro_str(((-1, -1, -1), (1, -1, 0), (-1, 1)))=='+-------+\\n|...x...|\\n|..x.0..|\\n|.x.x.1.|\\n|..1.x..|\\n+-------+'	10	True
+tabuleiro_str	tabuleiro_str(((-1, -1, -1), (1, -1, 1), (-1, 0)))=='+-------+\\n|...x...|\\n|..x.1..|\\n|.x.x.0.|\\n|..1.x..|\\n+-------+'	10	True
+tabuleiro_str	tabuleiro_str(((-1, -1, -1), (1, 0, -1), (1, -1)))=='+-------+\\n|...x...|\\n|..x.x..|\\n|.x.0.x.|\\n|..1.1..|\\n+-------+'	10	True
+tabuleiro_str	tabuleiro_str(((-1, -1, -1), (1, 1, -1), (0, -1)))=='+-------+\\n|...x...|\\n|..x.x..|\\n|.x.1.x.|\\n|..1.0..|\\n+-------+'	10	True
+tabuleiro_str	tabuleiro_str(((0, -1, 0), (-1, -1, -1), (-1, 0)))!='+-------+\\n|...0...|\\n|..x.x..|\\n|.0.x.0.|\\n|..x.x..|\\n+-------+'	10	False
+tabuleiro_str	tabuleiro_str(((0, -1, 1), (-1, -1, -1), (-1, 1)))!='+-------+\\n|...1...|\\n|..x.x..|\\n|.0.x.1.|\\n|..x.x..|\\n+-------+'	10	False
+tabuleiro_str	tabuleiro_str(((0, 0, -1), (-1, -1, -1), (0, -1)))!='+-------+\\n|...x...|\\n|..0.x..|\\n|.0.x.x.|\\n|..x.0..|\\n+-------+'	10	False
+tabuleiro_str	tabuleiro_str(((0, 1, -1), (-1, -1, -1), (1, -1)))!='+-------+\\n|...x...|\\n|..1.x..|\\n|.0.x.x.|\\n|..x.1..|\\n+-------+'	10	False
+tabuleiro_str	tabuleiro_str(((1, -1, 0), (-1, -1, -1), (-1, 1)))!='+-------+\\n|...0...|\\n|..x.x..|\\n|.1.x.1.|\\n|..x.x..|\\n+-------+'	10	False
+tabuleiro_str	tabuleiro_str(((1, -1, 1), (-1, -1, -1), (-1, 0)))!='+-------+\\n|...1...|\\n|..x.x..|\\n|.1.x.0.|\\n|..x.x..|\\n+-------+'	10	False
+tabuleiro_str	tabuleiro_str(((1, 0, -1), (-1, -1, -1), (1, -1)))!='+-------+\\n|...x...|\\n|..0.x..|\\n|.1.x.x.|\\n|..x.1..|\\n+-------+'	10	False
+tabuleiro_str	tabuleiro_str(((1, 1, -1), (-1, -1, -1), (0, -1)))!='+-------+\\n|...x...|\\n|..1.x..|\\n|.1.x.x.|\\n|..x.0..|\\n+-------+'	10	False
+tabuleiro_str	tabuleiro_str(((-1, -1, -1), (0, 0, -1), (0, -1)))=='+-------+\\n|...x...|\\n|..x.x..|\\n|.x.0.x.|\\n|..0.0..|\\n+-------+\\n'	10	False
+tabuleiro_str	tabuleiro_str(((-1, -1, -1), (0, 1, -1), (1, -1)))=='+-------+\\n|...x...|\\n|..x.x..|\\n|.x.1.x.|\\n|..0.1..|\\n+-------+ '	10	False
+tabuleiro_str	tabuleiro_str(((-1, -1, -1), (0, 1, -1), (1, -1)))=='+_______+\\n|...x...|\\n|..x.x..|\\n|.x.1.x.|\\n|..0.1..|\\n+_______+'	10	False
+tabuleiro_str	tabuleiro_str(((1,-1,-1,-1),(-1,-1,-1),(1,0)))	10	tabuleiro_str: argumento invalido
+tabuleiro_str	tabuleiro_str(((1,-1,-1),(-1,-1,-1,-1),(1,0)))	10	tabuleiro_str: argumento invalido
+tabuleiro_str	tabuleiro_str(((1,-1,-1),(-1,-1,-1),(1,0,1)))	10	tabuleiro_str: argumento invalido
+tabuleiro_str	tabuleiro_str((('1','-1','-1'),('-1','-1','-1'),('1','0','1')))	10	tabuleiro_str: argumento invalido
+tabuleiro_str	tabuleiro_str((((),(),()),((),(),()),((),())))	10	tabuleiro_str: argumento invalido
+tabuleiro_str	tabuleiro_str(((2,-1,6),(0,2,-1),(1,-1)))	10	tabuleiro_str: argumento invalido
+tabuleiro_str	tabuleiro_str(([-1,-1,-1],[0,0,-1],[1,-1]))	10	tabuleiro_str: argumento invalido
+tabuleiro_str	tabuleiro_str([[-1,-1,-1],[0,0,-1],[1,-1]])	10	tabuleiro_str: argumento invalido
+tabuleiro_str	tabuleiro_str([(-1,-1,-1),(0,0,-1),(1,-1)])	10	tabuleiro_str: argumento invalido
+tabuleiro_str	tabuleiro_str([(-1,-1,-1),(0,0,-1),(1,-1)])	10	tabuleiro_str: argumento invalido
+tabuleiro_str	tabuleiro_str('((-1,-1,-1),(0,0,-1),(1,-1))')	5	tabuleiro_str: argumento invalido
+tabuleiro_str	tabuleiro_str(((1,-1),(0,0,-1),(-1,-1,-1)))	5	tabuleiro_str: argumento invalido
+#
+#	tabuleiros_iguais 100  (20)
+tabuleiros_iguais	t1=((-1,-1,-1),(0,0,-1),(1,-1))\nt2=((-1,-1,-1),(0,0,-1),(1,-1))\ntabuleiros_iguais(t1,t2)	5	True
+tabuleiros_iguais	t1=((0,-1,-1),(0,0,-1),(1,-1))\nt2=((-1,-1,-1),(0,0,-1),(1,-1))\ntabuleiros_iguais(t1,t2)	5	False
+tabuleiros_iguais	t1=((-2,-1,-1),(0,0,-1),(1,-1))\nt2=((-1,-1,-1),(0,0,-1),(1,-1))\ntabuleiros_iguais(t1,t2)	5	tabuleiros_iguais: um dos argumentos nao e tabuleiro
+tabuleiros_iguais	t1=((-1,-1,-1),(0,'x',-1),(1,-1))\nt2=((-1,-1,-1),(0,0,-1),(1,-1))\ntabuleiros_iguais(t1,t2)	5	tabuleiros_iguais: um dos argumentos nao e tabuleiro
+tabuleiros_iguais	t1=((-1,-1,-1),(0,0,-1),(1,-1))\nt2=((-2,-1,-1),(0,0,-1),(1,-1))\ntabuleiros_iguais(t1,t2)	5	tabuleiros_iguais: um dos argumentos nao e tabuleiro
+tabuleiros_iguais	t2=((-1,-1,-1),(0,0,-1),(1,-1))\nt1=((-2,-1,-1),(0,0,-1),(1,-1))\ntabuleiros_iguais(t1,t2)	5	tabuleiros_iguais: um dos argumentos nao e tabuleiro
+tabuleiros_iguais	t1=((-1,-1,-1),(0,0,-1),(1,-1))\nt2=((-1,-1,-1),(0,'x',-1),(1,-1))\ntabuleiros_iguais(t1,t2)	5	tabuleiros_iguais: um dos argumentos nao e tabuleiro
+tabuleiros_iguais	t1='((-1,-1,-1),(0,0,-1),(1,-1))'\nt2='((-1,-1,-1),(0,0,-1),(1,-1))'\ntabuleiros_iguais(t1,t2)	5	tabuleiros_iguais: um dos argumentos nao e tabuleiro
+tabuleiros_iguais	t1=[(-1,-1,-1),(0,0,-1),(1,-1)]\nt2=[(-1,-1,-1),(0,0,-1),(1,-1)]\ntabuleiros_iguais(t1,t2)	5	tabuleiros_iguais: um dos argumentos nao e tabuleiro
+tabuleiros_iguais	t1=([-1,-1,-1],[0,0,-1],[1,-1])\nt2=([-1,-1,-1],[0,0,-1],[1,-1])\ntabuleiros_iguais(t1,t2)	5	tabuleiros_iguais: um dos argumentos nao e tabuleiro
+tabuleiros_iguais	t1=[[-1,-1,-1],[0,0,-1],[1,-1]]\nt2=[[-1,-1,-1],[0,0,-1],[1,-1]]\ntabuleiros_iguais(t1,t2)	5	tabuleiros_iguais: um dos argumentos nao e tabuleiro
+tabuleiros_iguais	t1=[[-1,-1,-1],[0,0,-1],[1,-1]]\nt2=[[-1,-1,-1],[0,0,-1],[1,-1,1]]\ntabuleiros_iguais(t1,t2)	5	tabuleiros_iguais: um dos argumentos nao e tabuleiro
+tabuleiros_iguais	t1='0'\nt2='0'\ntabuleiros_iguais(t1,t2)	5	tabuleiros_iguais: um dos argumentos nao e tabuleiro
+tabuleiros_iguais	t1=()\nt2=()\ntabuleiros_iguais(t1,t2)	5	tabuleiros_iguais: um dos argumentos nao e tabuleiro
+tabuleiros_iguais	t1=((1,),(1,),(1,))\nt2=((1,),(1,),(1,))\ntabuleiros_iguais(t1,t2)	5	tabuleiros_iguais: um dos argumentos nao e tabuleiro
+tabuleiros_iguais	t1=((2,3,4),(4,5,6),(7,8))\nt2=((2,3,4),(4,5,6),(7,8))\ntabuleiros_iguais(t1,t2)	5	tabuleiros_iguais: um dos argumentos nao e tabuleiro
+tabuleiros_iguais	t1=((-1,-1,-1),(0,0,-1),(1,1,-1))\nt2=((-1,-1,-1),(0,0,-1),(1,1,-1))\ntabuleiros_iguais(t1,t2)	5	tabuleiros_iguais: um dos argumentos nao e tabuleiro
+tabuleiros_iguais	t1=((-1,-1,-1),(0,-1),(1,-1))\nt2=((-1,-1,-1),(0,-1),(1,-1))\ntabuleiros_iguais(t1,t2)	5	tabuleiros_iguais: um dos argumentos nao e tabuleiro
+tabuleiros_iguais	t1=((-1,-1,-1),(0,0,-1),(1,))\nt2=((-1,-1,-1),(0,0,-1),(1,))\ntabuleiros_iguais(t1,t2)	5	tabuleiros_iguais: um dos argumentos nao e tabuleiro
+tabuleiros_iguais	t1=((-1,-1),(0,0,-1),(1,-1))\nt2=((-1,-1),(0,0,-1),(1,-1))\ntabuleiros_iguais(t1,t2)	5	tabuleiros_iguais: um dos argumentos nao e tabuleiro
+#
+#	porta_x 300  (33)
+porta_x	t=((-1,-1,-1),(0,0,-1),(1,-1))\nporta_x(t,1)	6	porta_x: um dos argumentos e invalido
+porta_x	t=((-1,-1,-1),(0,0,-1),(1,-1))\nporta_x(t,'ES')	6	porta_x: um dos argumentos e invalido
+porta_x	t=((-1,-1,-1),(0,0,-1),(1,-1))\nporta_x(t,())	6	porta_x: um dos argumentos e invalido
+porta_x	t=((-1,-1,-1),(0,0,-1),(1,-1))\nporta_x(t,[])	6	porta_x: um dos argumentos e invalido
+#
+porta_x	t=((-1,-1,-1),(0,0,-1),(1,-1))\ntype(porta_x(t,'D'))!=tuple	12	False
+porta_x	porta_x(((-1,-1,-1),(0,-1,0),(-1,0)),"D")==((-1,-1,-1),(0,-1,0),(-1,0))	12	True
+porta_x	porta_x(((-1,-1,-1),(0,-1,0),(-1,0)),"E")==((-1,-1,-1),(1,-1,1),(-1,0))	12	True
+porta_x	porta_x(((-1,-1,-1),(0,0,-1),(0,-1)),"D")==((-1,-1,-1),(0,1,-1),(1,-1))	12	True
+porta_x	porta_x(((-1,-1,-1),(0,0,-1),(0,-1)),"E")==((-1,-1,-1),(1,1,-1),(0,-1))	12	True
+porta_x	porta_x(((-1,-1,-1),(0,1,-1),(1,-1)),"D")==((-1,-1,-1),(0,0,-1),(0,-1))	12	True
+porta_x	porta_x(((-1,-1,-1),(0,1,-1),(1,-1)),"E")==((-1,-1,-1),(1,0,-1),(1,-1))	12	True
+porta_x	porta_x(((-1,-1,-1),(1,-1,0),(-1,1)),"D")==((-1,-1,-1),(1,-1,0),(-1,1))	12	True
+porta_x	porta_x(((-1,-1,-1),(1,-1,0),(-1,1)),"E")==((-1,-1,-1),(0,-1,1),(-1,1))	12	True
+porta_x	porta_x(((-1,-1,-1),(1,0,-1),(1,-1)),"D")==((-1,-1,-1),(1,1,-1),(0,-1))	12	True
+porta_x	porta_x(((-1,-1,-1),(1,0,-1),(1,-1)),"E")!=((-1,-1,-1),(0,1,-1),(1,-1))	12	False
+porta_x	porta_x(((-1,-1,-1),(1,1,-1),(0,-1)),"D")!=((-1,-1,-1),(1,0,-1),(1,-1))	12	False
+porta_x	porta_x(((-1,-1,-1),(1,1,-1),(0,-1)),"E")!=((-1,-1,-1),(0,0,-1),(0,-1))	12	False
+porta_x	porta_x(((0,0,-1),(-1,-1,-1),(0,-1)),"D")!=((0,1,-1),(-1,-1,-1),(1,-1))	12	False
+porta_x	porta_x(((0,0,-1),(-1,-1,-1),(0,-1)),"E")!=((0,0,-1),(-1,-1,-1),(0,-1))	12	False
+porta_x	porta_x(((0,1,-1),(-1,-1,-1),(1,-1)),"D")!=((0,0,-1),(-1,-1,-1),(0,-1))	12	False
+porta_x	porta_x(((0,1,-1),(-1,-1,-1),(1,-1)),"E")!=((0,1,-1),(-1,-1,-1),(1,-1))	12	False
+#
+porta_x	porta_x(((1,1,-1),(-1,-1,-1),(0,-1)),"D")==((1,0,-1),(-1,-1,-1),(1,-1))	6	True
+porta_x	porta_x(((1,1,-1),(-1,-1,-1),(0,-1)),"E")!=((1,1,-1),(-1,-1,-1),(0,-1))	6	False
+#
+porta_x	t=((-1,-1,-1),(0,-1),(1,-1))\nporta_x(t,'E')	6	porta_x: um dos argumentos e invalido
+porta_x	t=((-1,-1,-1),(0,-1),(1,-1))\nporta_x(t,'D')	6	porta_x: um dos argumentos e invalido
+porta_x	t=((-1,-1,-1),(0,-1,1),(1,-1,1))\nporta_x(t,'E')	6	porta_x: um dos argumentos e invalido
+porta_x	t='((-1,-1,-1),(0,0,-1),(1,-1))'\nporta_x(t,'D')	6	porta_x: um dos argumentos e invalido
+porta_x	t=[(-1,-1,-1),(0,0,-1),(1,-1)]\nporta_x(t,'E')	6	porta_x: um dos argumentos e invalido
+porta_x	t=[[-1,-1,-1],[0,0,-1],[1,-1]]\nporta_x(t,'D')	6	porta_x: um dos argumentos e invalido
+porta_x	t=([-1,-1,-1],[0,0,-1],[1,-1])\nporta_x(t,'E')	6	porta_x: um dos argumentos e invalido
+porta_x	t=[(-1,2,-1),(0,3,-1),(4,-1)]\nporta_x(t,'D')	6	porta_x: um dos argumentos e invalido
+porta_x	t=[(-1,2,-1),(0,3,-1),(1,3)]\nporta_x(t,'E')	6	porta_x: um dos argumentos e invalido
+porta_x	t=((-1,'x','-1'),('0',3,-1),(1,'-1'))\nporta_x(t,'E')	6	porta_x: um dos argumentos e invalido
+#
+#	porta_z 300 (45)
+porta_z	t=((0,-1,4),(-1,-1,-1),(-1,0))\nporta_z(t,1)	4	porta_z: um dos argumentos e invalido
+porta_z	t=((0,-1,0),(-1,-1,-1),(-1,0))\nporta_z(t,'A')	4	porta_z: um dos argumentos e invalido
+porta_z	t=((0,-1,0),(-1,-1,-1),(-1,0))\nporta_z(t,())	4	porta_z: um dos argumentos e invalido
+porta_z	t=((0,-1,0),(-1,-1,-1),(-1,0))\nporta_z(t,[])	4	porta_z: um dos argumentos e invalido
+porta_z	t=((0,-1,0),(-1,-1,-1),(-1,0))\nporta_z(t,'h')	4	porta_z: um dos argumentos e invalido
+#
+porta_z	t=((0,-1,0),(-1,-1,-1),(-1,0))\nt2=porta_z(t,'E')\nt2[0][2]==1	8	True
+porta_z	t=((0,-1,0),(-1,-1,-1),(-1,0))\nt2=porta_z(t,'E')\nt2[0][1]==-1	8	True
+porta_z	t=((0,-1,0),(-1,-1,-1),(-1,0))\nt2=porta_z(t,'E')\nt2[0][0]==1	8	True
+porta_z	t=((0,-1,0),(-1,-1,-1),(-1,0))\nt2=porta_z(t,'E')\nt2[0][1]!=-1	8	False
+porta_z	t=((0,-1,0),(-1,-1,-1),(-1,0))\nt2=porta_z(t,'E')\nt2[1][2]==-1	8	True
+porta_z	t=((0,-1,0),(-1,-1,-1),(-1,0))\nt2=porta_z(t,'E')\nt2[2][1]!=0	8	False
+porta_z	t=((0,-1,0),(-1,-1,-1),(-1,0))\nt2=porta_z(t,'D')\nt2[0][2]==1	8	True
+porta_z	t=((0,-1,0),(-1,-1,-1),(-1,0))\nt2=porta_z(t,'D')\nt2[1][2]==-1	8	True
+porta_z	t=((0,-1,0),(-1,-1,-1),(-1,0))\nt2=porta_z(t,'D')\nt2[2][1]==1	8	True
+porta_z	t=((0,-1,0),(-1,-1,-1),(-1,0))\nt2=porta_z(t,'D')\nt2[0][1]!=-1	8	False
+porta_z	t=((0,-1,0),(-1,-1,-1),(-1,0))\nt2=porta_z(t,'D')\nt2[0][0]!=0	8	False
+porta_z	t=((0,-1,0),(-1,-1,-1),(-1,0))\nt2=porta_z(t,'D')\nt2[0][1]=='x'	8	False
+#
+porta_z	porta_z(((-1,-1,-1),(0,1,-1),(1,-1)),"D")==((-1,-1,-1),(0,1,-1),(1,-1))	8	True
+porta_z	porta_z(((-1,-1,-1),(0,1,-1),(1,-1)),"E")==((-1,-1,-1),(0,1,-1),(1,-1))	8	True
+porta_z	porta_z(((-1,-1,-1),(1,-1,1),(-1,0)),"D")==((-1,-1,-1),(1,-1,0),(-1,1))	8	True
+porta_z	porta_z(((-1,-1,-1),(1,-1,1),(-1,0)),"E")==((-1,-1,-1),(1,-1,1),(-1,0))	8	True
+porta_z	porta_z(((-1,-1,-1),(1,0,-1),(1,-1)),"D")==((-1,-1,-1),(1,0,-1),(1,-1))	8	True
+porta_z	porta_z(((-1,-1,-1),(1,0,-1),(1,-1)),"E")==((-1,-1,-1),(1,0,-1),(1,-1))	8	True
+porta_z	porta_z(((0,-1,0),(-1,-1,-1),(-1,0)),"D")==((0,-1,1),(-1,-1,-1),(-1,1))	8	True
+porta_z	porta_z(((0,-1,0),(-1,-1,-1),(-1,0)),"E")==((1,-1,1),(-1,-1,-1),(-1,0))	8	True
+porta_z	porta_z(((0,-1,1),(-1,-1,-1),(-1,1)),"D")==((0,-1,0),(-1,-1,-1),(-1,0))	8	True
+porta_z	porta_z(((0,-1,1),(-1,-1,-1),(-1,1)),"E")!=((1,-1,0),(-1,-1,-1),(-1,1))	8	False
+porta_z	porta_z(((0,0,-1),(-1,-1,-1),(0,-1)),"D")!=((0,0,-1),(-1,-1,-1),(0,-1))	8	False
+porta_z	porta_z(((0,0,-1),(-1,-1,-1),(0,-1)),"E")!=((1,1,-1),(-1,-1,-1),(0,-1))	8	False
+porta_z	porta_z(((1,-1,0),(-1,-1,-1),(-1,1)),"D")!=((1,-1,1),(-1,-1,-1),(-1,0))	8	False
+porta_z	porta_z(((1,-1,0),(-1,-1,-1),(-1,1)),"E")!=((0,-1,1),(-1,-1,-1),(-1,1))	8	False
+porta_z	porta_z(((1,-1,1),(-1,-1,-1),(-1,0)),"D")!=((1,-1,0),(-1,-1,-1),(-1,1))	8	False
+porta_z	porta_z(((1,1,-1),(-1,-1,-1),(0,-1)),"E")!=((0,0,-1),(-1,-1,-1),(0,-1))	8	False
+#
+porta_z	t=((0,-1,0),(-1,-1,-1),(-1,0))\ntype(porta_z(t,'D'))!=tuple	8	False
+porta_z	t=((0,-1,0),(-1,-1,-1),(-1,0))\nt2=porta_z(t,'D')\nt3=porta_z(t,'E')\nt2[0][2]!=t3[0][2]	8	False
+porta_z	t=((-1,-1,-1),(0,-1),(1,-1))\nporta_z(t,'E')	4	porta_z: um dos argumentos e invalido
+porta_z	t=((-1,-1,-1),(0,-1,1),(1,-1,1))\nporta_z(t,'E')	4	porta_z: um dos argumentos e invalido
+porta_z	t=((-1,-1,-1,-1),(0,-1,1),(1,-1))\nporta_z(t,'D')	4	porta_z: um dos argumentos e invalido
+porta_z	t='((-1,-1,-1),(0,0,-1),(1,-1))'\nt2=porta_z(t,'D')	4	porta_z: um dos argumentos e invalido
+porta_z	t=[(-1,-1,-1),(0,0,-1),(1,-1)]\nt2=porta_z(t,'D')	4	porta_z: um dos argumentos e invalido
+porta_z	t=[[-1,-1,-1],[0,0,-1],[1,-1]]\nt2=porta_z(t,'E')	4	porta_z: um dos argumentos e invalido
+porta_z	t=([-1,-1,-1],[0,0,-1],[1,-1])\nt2=porta_z(t,'E')	4	porta_z: um dos argumentos e invalido
+porta_z	t=[(-1,2,-1),(0,3,-1),(4,-1)]\nt2=porta_z(t,'D')	4	porta_z: um dos argumentos e invalido
+porta_z	t=[(-1,2,-1),(0,3,-1),(1,3)]\nt2=porta_z(t,'E')	4	porta_z: um dos argumentos e invalido
+porta_z	t=((-1,'-1',-1),(0,2,'x'),(1,'a'))\nt2=porta_z(t,'D')	4	porta_z: um dos argumentos e invalido
+#
+#	porta_h 300 (45)
+porta_h	t=((-1,-1,-1),(0,0,-1),(0,-1))\nporta_h(t,1)	4	porta_h: um dos argumentos e invalido
+porta_h	t=((-1,-1,-1),(0,0,-1),(0,-1))\nporta_h(t,'A')	4	porta_h: um dos argumentos e invalido
+porta_h	t=((-1,-1,-1),(0,0,-1),(0,-1))\nporta_h(t,())	4	porta_h: um dos argumentos e invalido
+porta_h	t=((-1,-1,-1),(0,0,-1),(0,-1))\nporta_h(t,[])	4	porta_h: um dos argumentos e invalido
+porta_h	t=((-1,-1,-1),(0,0,-1),(0,-1))\nporta_h(t,'z')	4	porta_h: um dos argumentos e invalido
+porta_h	t=((-1,-1,-1),(0,0,-1),(0,-1))\nt2=porta_h(t,'E')\nt2[1][1]==-1	8	True
+porta_h	t=((-1,-1,-1),(0,0,-1),(0,-1))\nt2=porta_h(t,'E')\nt2[1][0]==-1	8	True
+porta_h	t=((-1,-1,-1),(0,0,-1),(0,-1))\nt2=porta_h(t,'E')\nt2[2][0]!=0	8	False
+porta_h	t=((-1,-1,-1),(0,0,-1),(0,-1))\nt2=porta_h(t,'E')\nt2[0][0]!=0	8	False
+porta_h	t=((-1,-1,-1),(0,0,-1),(0,-1))\nt2=porta_h(t,'E')\nt2[0][1]!=0	8	False
+porta_h	t=((-1,-1,-1),(0,0,-1),(0,-1))\nt2=porta_h(t,'E')\nt2[0][2]==-1	8	True
+porta_h	t=((-1,-1,-1),(0,0,-1),(0,-1))\nt2=porta_h(t,'E')\nt2[0][2]=='x'	8	False
+porta_h	t=((-1,-1,-1),(0,0,-1),(0,-1))\nt2=porta_h(t,'E')\nt2[2][1]!=-1	8	False
+porta_h	t=((-1,-1,-1),(0,0,-1),(0,-1))\nt2=porta_h(t,'D')\nt2[1][1]==-1	8	True
+porta_h	t=((-1,-1,-1),(0,0,-1),(0,-1))\nt2=porta_h(t,'D')\nt2[2][0]==-1	8	True
+porta_h	t=((-1,-1,-1),(0,0,-1),(0,-1))\nt2=porta_h(t,'D')\nt2[2][1]!=0	8	False
+porta_h	t=((-1,-1,-1),(0,0,-1),(0,-1))\nt2=porta_h(t,'D')\nt2[1][2]!=0	8	False
+porta_h	t=((-1,-1,-1),(0,0,-1),(0,-1))\nt2=porta_h(t,'D')\nt2[0][2]==-1	8	True
+#
+porta_h	porta_h(((-1,-1,-1),(0,-1,1),(-1,1)),"D")==((-1,-1,-1),(0,1,-1),(1,-1))	8	True
+porta_h	porta_h(((-1,-1,-1),(0,-1,1),(-1,1)),"E")==((0,-1,1),(-1,-1,-1),(-1,1))	8	True
+porta_h	porta_h(((-1,-1,-1),(0,0,-1),(0,-1)),"D")==((-1,-1,-1),(0,-1,0),(-1,0))	8	True
+porta_h	porta_h(((-1,-1,-1),(0,0,-1),(0,-1)),"E")==((0,0,-1),(-1,-1,-1),(0,-1))	8	True
+porta_h	porta_h(((-1,-1,-1),(1,1,-1),(0,-1)),"D")==((-1,-1,-1),(1,-1,1),(-1,0))	8	True
+porta_h	porta_h(((-1,-1,-1),(1,1,-1),(0,-1)),"E")==((1,1,-1),(-1,-1,-1),(0,-1))	8	True
+porta_h	porta_h(((0,-1,0),(-1,-1,-1),(-1,0)),"D")==((0,0,-1),(-1,-1,-1),(0,-1))	8	True
+porta_h	porta_h(((0,-1,0),(-1,-1,-1),(-1,0)),"E")!=((-1,-1,-1),(0,-1,0),(-1,0))	8	False
+porta_h	porta_h(((0,-1,1),(-1,-1,-1),(-1,1)),"D")!=((0,1,-1),(-1,-1,-1),(1,-1))	8	False
+porta_h	porta_h(((0,-1,1),(-1,-1,-1),(-1,1)),"E")!=((-1,-1,-1),(0,-1,1),(-1,1))	8	False
+porta_h	porta_h(((0,0,-1),(-1,-1,-1),(0,-1)),"D")!=((0,-1,0),(-1,-1,-1),(-1,0))	8	False
+porta_h	porta_h(((0,0,-1),(-1,-1,-1),(0,-1)),"E")!=((-1,-1,-1),(0,0,-1),(0,-1))	8	False
+porta_h	porta_h(((0,1,-1),(-1,-1,-1),(1,-1)),"D")!=((0,-1,1),(-1,-1,-1),(-1,1))	8	False
+porta_h	porta_h(((0,1,-1),(-1,-1,-1),(1,-1)),"E")!=((-1,-1,-1),(0,1,-1),(1,-1))	8	False
+#
+porta_h	t=((-1,-1,-1),(0,0,-1),(0,-1))\ntype(porta_h(t,'D'))!=tuple	8	False
+porta_h	t=((-1,-1,-1),(0,0,-1),(0,-1))\nt2=porta_h(t,'D')\nt3=porta_h(t,'E')\nt2[1][2]!=t3[0][1]	8	False
+porta_h	t=((-1,-1,-1),(0,0,-1),(0,-1))\nt2=porta_h(t,'D')\nt3=porta_h(t,'E')\nt2[1][1]!=t3[1][1]	8	False
+porta_h	t=((-1,-1,-1),(0,-1),(1,-1))\nporta_h(t,'E')	4	porta_h: um dos argumentos e invalido
+porta_h	t=((-1,-1,-1),(0,-1,1),(1,-1,1))\nporta_h(t,'E')	4	porta_h: um dos argumentos e invalido
+porta_h	t='((-1,-1,-1),(0,0,-1),(1,-1))'\nt2=porta_h(t,'E')	4	porta_h: um dos argumentos e invalido
+porta_h	t=[(-1,-1,-1),(0,0,-1),(1,-1)]\nt2=porta_h(t,'D')	4	porta_h: um dos argumentos e invalido
+porta_h	t=[[-1,-1,-1],[0,0,-1],[1,-1]]\nt2=porta_h(t,'D')	4	porta_h: um dos argumentos e invalido
+porta_h	t=([-1,-1,-1],[0,0,-1],[1,-1])\nt2=porta_h(t,'D')	4	porta_h: um dos argumentos e invalido
+porta_h	t=[(-1,2,-1),(0,3,-1),(4,-1)]\nt2=porta_h(t,'D')	4	porta_h: um dos argumentos e invalido
+porta_h	t=[(-1,2,-1),(0,3,-1),(1,3)]\nt2=porta_h(t,'E')	4	porta_h: um dos argumentos e invalido
+porta_h	t=((-1,'-1',-1),(0,2,'x'),(1,'a'))\nt2=porta_h(t,'D')	4	porta_h: um dos argumentos e invalido
+porta_h	t=((-1,'x','-1'),('0',3,-1),(1,'-1'))\nt2=porta_h(t,'E')	4	porta_h: um dos argumentos e invalido

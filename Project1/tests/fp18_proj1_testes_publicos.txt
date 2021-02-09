@@ -1,0 +1,62 @@
+# FP2018/2019 - Projecto 1 - Testes publicos
+# 
+# os valores esperados encontram-se em comentario a seguir a cada teste
+
+t=((-1, -1, -1),(0, 0, -1),(0, -1))
+eh_tabuleiro(t)
+# True
+
+eh_tabuleiro('')
+# False
+
+tabuleiro_str(((-1, -1, -1),(0, 0, -1),(0, -1)))
+#'+-------+\n|...x...|\n|..x.x..|\n|.x.0.x.|\n|..0.0..|\n+-------+'
+
+tabuleiro_str('')
+# ValueError('tabuleiro_str: argumento invalido')
+
+t1=((-1, -1, -1),(0, 0, -1),(0, -1))
+t2=((-1, -1, -1),(0, 0, -1),(0, -1))
+tabuleiros_iguais(t1,t2)
+# True
+
+t1=((-1, -1, -1),(0, 0, -1),(0, -1))
+t2=((-1, -1, -1),(0, 0, -1),(0, 0))
+tabuleiros_iguais(t1,t2)
+# False
+
+t=((-1, -1, -1),(0, 0, -1),(0, -1))
+porta_x(t,'D')
+# ((-1,-1,-1),(0,1,-1),(1,-1))
+
+t=((-1, -1, -1),(0, 0, -1),(0, -1))
+porta_x(t,'E')
+# ((-1,-1,-1),(1,1,-1),(0,-1))
+
+t=((-1,-1,-1),(0,0,-1),(1,-1))
+porta_x(t,1)
+# ValueError('porta_x: um dos argumentos e invalido')
+
+t=((0,-1,1),(-1,-1,-1),(-1,1))
+porta_z(t,'D')
+# ((0,-1,0),(-1,-1,-1),(-1,0))
+
+t=((0,-1,1),(-1,-1,-1),(-1,1))
+porta_z(t,'E')
+# ((1,-1,0),(-1,-1,-1),(-1,1))
+
+porta_x(False,'D')
+# ValueError('porta_z: um dos argumentos e invalido')
+
+t=((0,-1,1),(-1,-1,-1),(-1,1))
+porta_h(t,'D')
+# ((0,1,-1),(-1,-1,-1),(1,-1))
+
+t=((0,-1,1),(-1,-1,-1),(-1,1))
+porta_h(t,'E')
+# ((-1,-1,-1),(0,-1,1),(-1,1))
+
+t=((0,-1,1),(-1,-1,-1),(-1,1))
+porta_h(t,True)
+# ValueError('porta_h: um dos argumentos e invalido')
+
